@@ -60,20 +60,28 @@ This implementation plan breaks down the portfolio website development into incr
     - _Requirements: 8.1, 8.2_
     - _Explanation: Learn custom hooks, Intersection Observer API, and Anime.js basics_
 
-- [ ] 5. Build Navigation component
-  - [ ] 5.1 Create desktop navigation bar
+- [x] 5. Build Navigation component
+
+
+
+  - [x] 5.1 Create desktop navigation bar
+
+
     - Fixed position with transparent background and blur effect
     - Navigation links for all sections
     - Smooth scroll functionality on link click
     - _Requirements: 1.3, 6.1, 6.2_
     - _Explanation: Learn fixed positioning, backdrop blur, and smooth scrolling_
 
-  - [ ] 5.2 Implement scroll spy for active section highlighting
+
+  - [x] 5.2 Implement scroll spy for active section highlighting
+
     - Create useScrollSpy custom hook
     - Detect current section based on scroll position
     - Animate active link indicator
     - _Requirements: 6.3_
     - _Explanation: Learn scroll event handling and state management_
+
 
   - [ ] 5.3 Add mobile hamburger menu
     - Create hamburger icon with animation

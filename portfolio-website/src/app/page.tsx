@@ -1,11 +1,20 @@
+'use client';
+
 import Button from '@/components/ui/Button';
 import AnimatedSection from '@/components/animations/AnimatedSection';
+import Navbar from '@/components/layout/Navbar';
+import { useScrollSpy } from '@/hooks/useScrollSpy';
+
+const sectionIds = ['hero', 'projects', 'skills', 'gallery', 'contact'];
 
 export default function Home() {
+  // Track which section is currently in view
+  const activeSection = useScrollSpy(sectionIds);
+
   return (
     <>
-      {/* Navigation will be added here */}
-      {/* <Navbar activeSection={activeSection} /> */}
+      {/* Navigation */}
+      <Navbar activeSection={activeSection} />
 
       <main className="min-h-screen">
         {/* Hero Section */}
