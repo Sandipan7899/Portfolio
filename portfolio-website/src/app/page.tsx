@@ -3,6 +3,7 @@
 import AnimatedSection from '@/components/animations/AnimatedSection';
 import Navbar from '@/components/layout/Navbar';
 import Hero from '@/components/sections/Hero';
+import Projects from '@/components/sections/Projects';
 import { useScrollSpy } from '@/hooks/useScrollSpy';
 import { portfolioData, ctaButtons } from '@/lib/data';
 
@@ -28,21 +29,7 @@ export default function Home() {
         />
 
         {/* Projects Section */}
-        <section id="projects" className="min-h-screen py-20 px-4">
-          {/* Projects component will be added here */}
-          <AnimatedSection animation="fadeIn">
-            <div className="max-w-7xl mx-auto">
-              <h2 className="text-4xl font-bold text-center mb-4">Projects</h2>
-              <p className="text-center text-text-secondary mb-12">
-                Section placeholder - Projects will be displayed here
-                <br />
-                <span className="text-sm">
-                  (Scroll down to see the fade-in animation!)
-                </span>
-              </p>
-            </div>
-          </AnimatedSection>
-        </section>
+        <Projects projects={portfolioData.projects} />
 
         {/* Skills Section */}
         <section id="skills" className="min-h-screen py-20 px-4 bg-background">
