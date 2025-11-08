@@ -1,9 +1,10 @@
 'use client';
 
-import Button from '@/components/ui/Button';
 import AnimatedSection from '@/components/animations/AnimatedSection';
 import Navbar from '@/components/layout/Navbar';
+import Hero from '@/components/sections/Hero';
 import { useScrollSpy } from '@/hooks/useScrollSpy';
+import { portfolioData, ctaButtons } from '@/lib/data';
 
 const sectionIds = ['hero', 'projects', 'skills', 'gallery', 'contact'];
 
@@ -18,35 +19,13 @@ export default function Home() {
 
       <main className="min-h-screen">
         {/* Hero Section */}
-        <section id="hero" className="min-h-screen">
-          {/* Hero component will be added here */}
-          <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10">
-            <div className="text-center px-4">
-              <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-4">
-                Portfolio Website
-              </h1>
-              <p className="text-lg text-text-secondary max-w-2xl mx-auto mb-8">
-                Modern portfolio with smooth animations, responsive design, and
-                beautiful UI.
-                <br />
-                Testing our new Button and AnimatedSection components!
-              </p>
-
-              {/* Testing our Button components */}
-              <div className="flex flex-wrap gap-4 justify-center">
-                <Button variant="primary" size="lg" href="#projects">
-                  View Projects
-                </Button>
-                <Button variant="secondary" size="lg" href="#contact">
-                  Contact Me
-                </Button>
-                <Button variant="outline" size="lg" href="#skills">
-                  My Skills
-                </Button>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Hero
+          name={portfolioData.personal.name}
+          title={portfolioData.personal.title}
+          description={portfolioData.personal.description}
+          profileImage={portfolioData.personal.profileImage}
+          ctaButtons={ctaButtons}
+        />
 
         {/* Projects Section */}
         <section id="projects" className="min-h-screen py-20 px-4">

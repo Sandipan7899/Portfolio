@@ -6,7 +6,7 @@ export const portfolioData: PortfolioData = {
         name: 'Your Name',
         title: 'Full Stack Developer',
         description: 'Passionate developer creating modern web applications with clean code and beautiful designs.',
-        profileImage: '/images/hero/profile.jpg',
+        profileImage: '/images/hero/profile.svg',
         resume: '/resume.pdf',
     },
 
