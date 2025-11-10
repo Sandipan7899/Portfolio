@@ -136,9 +136,14 @@ export const slideUp = (element: HTMLElement | string, delay = 0) => {
 };
 
 // Typing animation effect (for text)
-export const typingAnimation = (element: HTMLElement, text: string) => {
+export const typingAnimation = (
+  element: HTMLElement, 
+  text: string, 
+  onComplete?: () => void
+) => {
   if (prefersReducedMotion()) {
     element.textContent = text;
+    if (onComplete) onComplete();
     return;
   }
 
@@ -151,6 +156,7 @@ export const typingAnimation = (element: HTMLElement, text: string) => {
       index++;
     } else {
       clearInterval(interval);
+      if (onComplete) onComplete();
     }
   }, 50); // 50ms per character
 };
