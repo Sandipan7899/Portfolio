@@ -156,23 +156,36 @@ This implementation plan breaks down the portfolio website development into incr
     - _Requirements: 2.1, 2.5, 8.2_
     - _Explanation: Learn CSS Grid, responsive design, and array mapping_
 
-- [ ] 8. Create Skills section
-  - [ ] 8.1 Build SkillBadge component
+- [x] 8. Create Skills section
+
+
+  - [x] 8.1 Build SkillBadge component
+
+
     - Badge design with icon and skill name
     - Optional proficiency indicator
     - Hover animation (bounce or pulse)
     - _Requirements: 3.3, 8.3_
     - _Explanation: Learn badge design patterns and micro-interactions_
 
-  - [ ] 8.2 Implement Skills section with categories
+  - [x] 8.2 Implement Skills section with categories
+
+
     - Organize skills by category (languages, frameworks, tools)
     - Responsive layout for skill groups
     - Staggered fade-in animations for skills
     - _Requirements: 3.1, 3.2, 8.2_
     - _Explanation: Learn data categorization and staggered animations_
 
-- [ ] 9. Build Gallery section
-  - [ ] 9.1 Create Gallery grid component
+- [x] 9. Build Gallery section
+
+
+
+
+
+  - [x] 9.1 Create Gallery grid component
+
+
     - Responsive grid layout (2 col mobile, 3 col tablet, 4 col desktop)
     - Thumbnail images with Next.js Image
     - Hover overlay effect with zoom
@@ -180,7 +193,9 @@ This implementation plan breaks down the portfolio website development into incr
     - _Requirements: 7.1, 7.2, 8.3_
     - _Explanation: Learn image grids, lazy loading, and click handlers_
 
-  - [ ] 9.2 Build Lightbox modal component
+  - [x] 9.2 Build Lightbox modal component
+
+
     - Full-screen overlay with backdrop
     - Display full-size image
     - Previous/Next navigation buttons
